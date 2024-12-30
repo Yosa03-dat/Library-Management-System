@@ -4,18 +4,6 @@ BOOKS_FILE = "books.csv"  # Book details file
 Library_Members = "members.csv"  # Library members details file
 
 
-def initialize_files():
-    # Initialize books file
-    with open(BOOKS_FILE, "w", newline='') as file:
-        writer = csv.writer(file)
-        writer.writerow(["Book ID", "Title", "Author", "Availability", "Borrower ID"])
-
-    # Initialize members file
-    with open(Library_Members, "w", newline='') as file:
-        writer = csv.writer(file)
-        writer.writerow(["Borrower ID", "Name", "Borrow Status", "Borrowed Book ID"])
-
-
 def add_borrower():
     borrower_id = input("Enter Borrower ID: ")
     borrower_name = input("Borrower Name: ")
@@ -33,7 +21,7 @@ def add_book():
     title = input("Enter Book Title: ")
     author = input("Enter Author Name: ")
     availability = "Yes"
-    borrower_id = ""
+    borrower_id = " "
 
     with open(BOOKS_FILE, "a", newline='') as file:
         writer = csv.writer(file)
@@ -149,7 +137,6 @@ def return_book():
 
 
 def interface():
-    initialize_files()
     while True:
         print("\nLibrary Management System")
         print("1. Add Book")

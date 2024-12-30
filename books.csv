@@ -1,1 +1,6 @@
-Book ID,Title,Author,Availability,Borrower ID
+ID,Title,Author,Availablity,Borrower
+B001,Harry potter and the Philosopher stone,J.K.Rowlin,Yes,
+B002,Harry potter and the Chamber of the secrets,J.K.Rowlin,Yes, 
+B003,Harry potter and the Prisoner of azkaban,J.K.Rowlin,Yes, 
+B004,Harry potter and the Goblet of fire,J.K.Rowlin,Yes,
+B005,Lord of the rings: Fellowship of the ring,J.R.R.Tolkien,Yes, 
